@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://7wdf6803flgv"]
+
+[ext_resource type="Script" uid="uid://pnl2p7nniw26" path="res://GameMod.gd" id="1_opu04"]
+[ext_resource type="Texture2D" uid="uid://d2utruoltlkul" path="res://office desk 1.png" id="2_uy8e2"]
+[ext_resource type="Script" uid="uid://dvqep4s4o4axo" path="res://bilgisayar_ekrani.gd" id="3_orwnn"]
+[ext_resource type="AudioStream" uid="uid://bi6w4771y6f5s" path="res://dragon-studio-keyboard-typing-asmr-356118.wav" id="4_52j7d"]
+
+[node name="ofisodasi" type="Node2D" unique_id=1663513251]
+script = ExtResource("1_opu04")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=593374175]
+position = Vector2(400.00003, 400.25)
+scale = Vector2(0.2633333, 0.26250002)
+texture = ExtResource("2_uy8e2")
+
+[node name="BilgisayarEkrani" type="Button" parent="." unique_id=1284255138]
+offset_left = 244.0
+offset_top = 367.0
+offset_right = 529.0
+offset_bottom = 620.0
+script = ExtResource("3_orwnn")
+
+[node name="Takvim" type="Button" parent="." unique_id=552701061]
+offset_left = 48.0
+offset_top = 229.0
+offset_right = 235.0
+offset_bottom = 443.0
+
+[node name="KlavyeSesi" type="AudioStreamPlayer2D" parent="." unique_id=1936956341]
+stream = ExtResource("4_52j7d")
+
+[connection signal="pressed" from="BilgisayarEkrani" to="." method="_on_bilgisayar_ekrani_pressed"]

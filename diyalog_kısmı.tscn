@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://6vmv166r3pa5"]
+
+[ext_resource type="Texture2D" uid="uid://d2utruoltlkul" path="res://office desk 1.png" id="1_wlmou"]
+
+[node name="Diyalog Kısmı" type="Node2D" unique_id=1995498677]
+
+[node name="OfficeDesk1" type="Sprite2D" parent="." unique_id=2145160273]
+position = Vector2(409.49997, 396)
+scale = Vector2(0.27033335, 0.26466668)
+texture = ExtResource("1_wlmou")
